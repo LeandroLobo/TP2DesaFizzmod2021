@@ -2,7 +2,7 @@
       "type": "module",
       "name": "prep",
       "version": "1.0.0",
-      "description": "",
+      "description": "TP#2",
       "main": "tp.js",
       "scripts": {
             "test": "jest --collectCoverage=false tp.test.js"
