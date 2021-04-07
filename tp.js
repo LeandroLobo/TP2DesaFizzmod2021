@@ -65,8 +65,15 @@ let mergedObjects = {};
  * newCounter(); // 2
 */
 function contador() {
-  return
+  let x=0;
+  return ()=>++x;
 }
+const newCounter = contador();
+console.log(newCounter());
+console.log(newCounter());
+console.log(newCounter());
+console.log(newCounter());
+console.log(newCounter());
 
 /**
  * Usa closures para crear un cache para la funcion cb.
