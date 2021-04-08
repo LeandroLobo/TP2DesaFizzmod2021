@@ -91,7 +91,13 @@ console.log(newCounter());
  * => => => => usá hasOwnProperty!
 */
 function cacheFunction(cb) {
-  return
+  let cache = {};
+  return x=>{
+    if(!cache.hasOwnProperty(x)){
+      cache = {...cache, [x]: cb(x)};
+    }
+    return cache[x];
+  };
 }
 
 module.exports = {
